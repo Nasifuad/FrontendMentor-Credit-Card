@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="cards">
+          <div class="card1">
+            <div class="white-emo">
+              <img src="./images/card-logo.svg" alt="card-logo" />
+            </div>
+            <div class="card-number">
+              <p class="zero">
+                <span>0000</span> <span>0000</span> <span>0000</span>
+                <span>0000</span>
+              </p>
+              <div class="name-date">
+                <p>Jane Appleseed</p>
+                <p><span>00</span>/<span>00</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="card2">
+            <img src="./images/bg-card-back.png" alt="" />
+          </div>
+        </div>
+        <div class="data">
+          <div class="name">
+            <label for="name"> CARDHOLDER NAME</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Name e.g. Jane Appleseed"
+            />
+          </div>
+          <div class="number">
+            <label for="number">CARD NUMBER</label>
+            <input
+              type="number"
+              id="number"
+              placeholder=" e.g. 1234 5678 9123 0000 "
+            />
+            <p id="error">Wrong Format Number Only</p>
+          </div>
+          <div class="date-cvc">
+            <div class="date">
+              <label for="date">EXP. DATE (MM/YEAR)</label>
+              <input type="number" id="month" placeholder="MM" />
+              <input type="number" id="year" placeholder="YY" />
+              <p id="error-date">Can't be blank</p>
+            </div>
+            <div class="cvc">
+              <label for="cvc">CVC</label>
+              <input type="number" id="cvc" placeholder="CVC" />
+              <p id="error-cvc">Can't be blank</p>
+            </div>
+          </div>
+          <button id="confirm">Confirm</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+:root {
+  --linear: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+  --red: hsl(0, 100%, 66%);
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+}
+body {
+  height: 100vh;
+  background: url("./images/bg-main-desktop.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  background-color: purple;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.cards {
+  background-color: palevioletred;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.data {
+  background: rgba(7, 7, 127, 0.545);
+}
+.card1 {
+  height: 250px;
+  background-image: url("./images/bg-card-front.png");
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 10px;
+  /* background-size: cover; */
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--white);
+}
+.card2 {
+  position: relative;
+  left: 100px;
+}
+.zero {
+  text-align: center;
+  padding: 10px 0px;
+}
+.zero span {
+  font-size: 30px;
+  color: var(--white);
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+.card-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  /* align-items: center; */
+}
+.name-date {
+  text-transform: uppercase;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
