@@ -24,17 +24,19 @@ body {
   align-items: center;
 }
 main {
-  background-color: purple;
+  /* background-color: purple; */
 }
 .container {
   display: flex;
   justify-content: space-between;
+  gap: 300px;
 }
 .cards {
-  background-color: palevioletred;
+  /* background-color: palevioletred; */
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 50vh;
 }
 .data {
   background: rgba(7, 7, 127, 0.545);
