@@ -3,18 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Interactive card details form</title>
-
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <main>
@@ -39,9 +35,9 @@
             <img src="./images/bg-card-back.png" alt="" />
           </div>
         </div>
-        <div class="data">
+        <div class="data visible" id="dataform">
           <div class="name">
-            <label for="name"> CARDHOLDER NAME</label>
+            <label for="name" class="lname">CARDHOLDER NAME</label>
             <input
               type="text"
               id="name"
@@ -49,9 +45,9 @@
             />
           </div>
           <div class="number">
-            <label for="number">CARD NUMBER</label>
+            <label for="number" class="lnumber">CARD NUMBER</label>
             <input
-              type="number"
+              type="text"
               id="number"
               placeholder=" e.g. 1234 5678 9123 0000 "
             />
@@ -59,20 +55,29 @@
           </div>
           <div class="date-cvc">
             <div class="date">
-              <label for="date">EXP. DATE (MM/YEAR)</label>
-              <input type="number" id="month" placeholder="MM" />
-              <input type="number" id="year" placeholder="YY" />
+              <label for="date" class="ldate">EXP. DATE (MM/YEAR)</label>
+              <div class="month-year">
+                <input type="text" id="month" placeholder="MM" />
+                <input type="text" id="year" placeholder="YY" />
+              </div>
               <p id="error-date">Can't be blank</p>
             </div>
             <div class="cvc">
-              <label for="cvc">CVC</label>
-              <input type="number" id="cvc" placeholder="CVC" />
+              <label for="cvc" class="lcvc">CVC</label>
+              <input type="text" id="cvc" placeholder="e.g. 123" />
               <p id="error-cvc">Can't be blank</p>
             </div>
           </div>
           <button id="confirm">Confirm</button>
         </div>
+        <div class="successfull hidden" id="success">
+          <img src="./images/icon-complete.svg" alt="Done" class="done" />
+          <h1>THANK YOU!</h1>
+          <p>We've added your card details</p>
+          <button id="continue">Continue</button>
+        </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

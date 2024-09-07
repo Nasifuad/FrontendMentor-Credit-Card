@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
 :root {
   --linear: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
   --red: hsl(0, 100%, 66%);
@@ -7,6 +8,7 @@
   --dark-grayish-violet: hsl(279, 6%, 55%);
   --very-dark-violet: hsl(278, 68%, 11%);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +16,7 @@
   font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
 }
+
 body {
   height: 100vh;
   background: url("./images/bg-main-desktop.png");
@@ -23,56 +26,61 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 main {
-  /* background-color: purple; */
+  height: 70vh;
 }
+
 .container {
   display: flex;
-  justify-content: space-between;
-  gap: 300px;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
 }
+
 .cards {
-  /* background-color: palevioletred; */
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: 50vh;
 }
-.data {
-  background: rgba(7, 7, 127, 0.545);
-}
+
 .card1 {
   height: 250px;
   background-image: url("./images/bg-card-front.png");
   background-repeat: no-repeat;
   display: flex;
   padding: 10px;
-  /* background-size: cover; */
   flex-direction: column;
   justify-content: space-between;
   color: var(--white);
+  border-radius: 15px;
 }
+
 .card2 {
   position: relative;
-  left: 100px;
+  left: 60px;
 }
+
 .zero {
   text-align: center;
   padding: 10px 0px;
 }
+
 .zero span {
   font-size: 30px;
   color: var(--white);
   letter-spacing: 3px;
   font-weight: 400;
 }
+
 .card-number {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  /* align-items: center; */
 }
+
 .name-date {
   text-transform: uppercase;
   padding: 10px 30px;
@@ -80,4 +88,140 @@ main {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name,
+.number {
+  display: flex;
+  flex-direction: column;
+}
+
+.lname,
+.lnumber,
+.ldate,
+.lcvc {
+  font-size: 12px;
+  padding: 12px 0px;
+  font-weight: 600;
+}
+
+#name,
+#number {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+#name:hover,
+#number:hover,
+#cvc:hover,
+#month:hover,
+#year:hover {
+  border: 1px solid black;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+#error {
+  color: var(--red);
+  font-size: 12px;
+  padding: 10px 0px;
+  display: none;
+}
+
+.date-cvc {
+  display: flex;
+  gap: 20px;
+}
+
+.date,
+.cvc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.month-year {
+  display: flex;
+  gap: 10px;
+}
+
+.month-year input {
+  width: 70px;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 10px 10px;
+  font-size: 16px;
+}
+
+#error-date,
+#error-cvc {
+  color: var(--red);
+  font-size: 12px;
+  display: none;
+}
+
+#cvc {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 10px 10px;
+  font-size: 16px;
+}
+
+#confirm {
+  background-color: var(--very-dark-violet);
+  color: var(--white);
+  padding: 0.4rem;
+  border-radius: 10px;
+}
+
+.successfull {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 50vh;
+}
+
+.done {
+  width: 60px;
+}
+
+h1 {
+  color: var(--very-dark-violet);
+  font-size: 20px;
+}
+
+.successfull p {
+  font-size: 14px;
+  color: var(--dark-grayish-violet);
+  font-weight: 400;
+}
+
+#continue {
+  width: 80%;
+  background-color: var(--very-dark-violet);
+  color: var(--white);
+  padding: 0.4rem;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
 }
