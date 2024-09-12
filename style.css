@@ -20,29 +20,30 @@
 body {
   height: 100vh;
   background: url("./images/bg-main-desktop.png");
-  background-size: auto;
+  background-size: 30vh cover;
+  /* background-position: left; */
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-main {
-  height: 70vh;
-}
-
 .container {
+  position: relative;
+  /* width: 70vh; */
+  /* background-color: aqua; */
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 30vh;
+  /* right: 100px; */
 }
 
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  width: 50vh;
+  /* gap: 30px; */
+  /* width: 50vh; */
 }
 
 .card1 {
@@ -94,6 +95,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: aquamarine;
+  width: 50vh;
+  justify-content: center;
 }
 
 .name,
@@ -113,12 +117,14 @@ main {
 
 #name,
 #number {
-  border: none;
+  border: 1px solid transparent;
   outline: none;
   background: none;
   padding: 10px 10px;
   font-size: 16px;
   width: 100%;
+  margin: 10px 0px;
+  font-weight: 600;
 }
 
 #name:hover,
@@ -128,7 +134,6 @@ main {
 #year:hover {
   border: 1px solid black;
   border-radius: 10px;
-  font-weight: 600;
 }
 
 #error {
@@ -157,11 +162,12 @@ main {
 
 .month-year input {
   width: 70px;
-  border: none;
+  border: 1px solid transparent;
   outline: none;
   background: none;
   padding: 10px 10px;
   font-size: 16px;
+  font-weight: 600;
 }
 
 #error-date,
@@ -172,11 +178,12 @@ main {
 }
 
 #cvc {
-  border: none;
+  border: 1px solid transparent;
   outline: none;
   background: none;
   padding: 10px 10px;
   font-size: 16px;
+  font-weight: 600;
 }
 
 #confirm {
